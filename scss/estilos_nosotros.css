@@ -1,0 +1,288 @@
+/* line 21, estilos_nosotros.scss */
+html {
+  font-size: 16px; }
+
+/* line 25, estilos_nosotros.scss */
+body,
+button {
+  font-family: 'Roboto', sans-serif; }
+
+/* line 30, estilos_nosotros.scss */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #363636; }
+
+/* line 36, estilos_nosotros.scss */
+nav button.navbar-toggler.navbar-toggler-right {
+  border: solid 1px #E2E2E2; }
+
+/* line 40, estilos_nosotros.scss */
+nav button i.fa-bars {
+  color: #E2E2E2;
+  font-size: 1.5rem; }
+
+@media (min-width: 768px) {
+  /* line 50, estilos_nosotros.scss */
+  #navbarNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+
+  /* line 54, estilos_nosotros.scss */
+  #navbarNav ul li:nth-child(3) {
+    border-bottom: solid 2px #33BBBB; }
+
+  /* line 57, estilos_nosotros.scss */
+  #navbarNav ul li a {
+    color: #E2E2E2; }
+
+  /* line 60, estilos_nosotros.scss */
+  #navbarNav ul li a.nav-link {
+    padding-bottom: 0;
+    margin-bottom: 0; } }
+/* line 74, estilos_nosotros.scss */
+.mainBanner {
+  background: url("../image/imgMainBannerUs.jpg") fixed no-repeat bottom;
+  height: 100vh;
+  background-size: cover;
+  height: 480px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 87, estilos_nosotros.scss */
+.mainBanner h1,
+h3 {
+  color: #E2E2E2;
+  margin: 0;
+  padding: 0; }
+
+/* line 94, estilos_nosotros.scss */
+.mainBanner h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2;
+  margin-top: 3rem; }
+
+/* line 103, estilos_nosotros.scss */
+.mainBanner h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2; }
+
+/* line 111, estilos_nosotros.scss */
+.mainBanner div:nth-child(3) h3 {
+  margin-top: -4rem; }
+
+/* line 115, estilos_nosotros.scss */
+.mainBanner button {
+  background-color: #007070;
+  border: solid 1px #33BBBB;
+  font-weight: 300;
+  line-height: 24px;
+  color: #E2E2E2; }
+
+@media (min-width: 992px) {
+  /* line 134, estilos_nosotros.scss */
+  .mainBanner h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -0.5px;
+    color: #E2E2E2;
+    margin-top: 3rem; }
+
+  /* line 143, estilos_nosotros.scss */
+  .mainBanner h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: #E2E2E2; } }
+/* line 157, estilos_nosotros.scss */
+.bradcrumbUs .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #0B4646; }
+
+/* line 163, estilos_nosotros.scss */
+.bradcrumbUs .breadcrumb {
+  background-color: transparent;
+  border: none;
+  margin: 0; }
+
+/* line 169, estilos_nosotros.scss */
+.bradcrumbUs ol li a {
+  color: #E2E2E2;
+  text-decoration: underline; }
+
+/* line 174, estilos_nosotros.scss */
+.bradcrumbUs .breadcrumb li.breadcrumb-item.active {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2; }
+
+/* line 182, estilos_nosotros.scss */
+.bradcrumbUs .breadcrumb li.breadcrumb-item.active::before {
+  color: #E2E2E2; }
+
+/* line 186, estilos_nosotros.scss */
+.content .row {
+  background-color: #009191;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 3rem; }
+
+/* line 194, estilos_nosotros.scss */
+.content h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2;
+  margin-top: 3rem; }
+
+/* line 203, estilos_nosotros.scss */
+.content p {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2; }
+
+/* line 213, estilos_nosotros.scss */
+.content button {
+  margin: 1rem;
+  background-color: #007070;
+  border: solid 2px #33BBBB;
+  font-weight: 300;
+  line-height: 24px;
+  color: #E2E2E2; }
+
+/* line 223, estilos_nosotros.scss */
+footer {
+  background-color: #202020;
+  padding-top: 3rem; }
+
+/* line 228, estilos_nosotros.scss */
+footer h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #E2E2E2; }
+
+/* line 237, estilos_nosotros.scss */
+footer .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 243, estilos_nosotros.scss */
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  color: #E2E2E2; }
+
+/* line 254, estilos_nosotros.scss */
+footer .row ul span {
+  background-color: #E2E2E2;
+  color: #363636;
+  padding: 0 1rem;
+  font-weight: 700; }
+
+/* line 261, estilos_nosotros.scss */
+footer .footer-Social li {
+  display: inline-block;
+  margin: 0;
+  padding: 0; }
+
+/* line 267, estilos_nosotros.scss */
+footer .footer-Social li i {
+  color: #E2E2E2;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 1rem; }
+
+@media (min-width: 768px) {
+  /* line 279, estilos_nosotros.scss */
+  footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+  /* line 284, estilos_nosotros.scss */
+  footer .row div {
+    padding: 1rem;
+    margin: 1rem; }
+
+  /* line 288, estilos_nosotros.scss */
+  footer .footer-Social li i {
+    color: #E2E2E2;
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem; } }
+
+/*# sourceMappingURL=estilos_nosotros.css.map */

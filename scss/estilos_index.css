@@ -1,0 +1,78 @@
+/* line 15, estilos_index.scss */
+.bordes {
+  border: solid 2px lime; }
+
+/* line 19, estilos_index.scss */
+.bordes1 {
+  border: solid 2px red; }
+
+/* line 23, estilos_index.scss */
+.bordes2 {
+  border: solid 2px blue; }
+
+/* line 27, estilos_index.scss */
+.bordes2 {
+  border: solid 2px orangered; }
+
+/* line 33, estilos_index.scss */
+html {
+  font-size: 16px; }
+
+/* line 37, estilos_index.scss */
+body,
+button {
+  font-family: 'Roboto', sans-serif;
+  color: #E2E2E2; }
+
+/* line 43, estilos_index.scss */
+#limpiarBootstrap {
+  padding: 0; }
+
+/* line 47, estilos_index.scss */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #363636; }
+
+/* line 53, estilos_index.scss */
+nav button.navbar-toggler.navbar-toggler-right {
+  border: solid 1px #E2E2E2; }
+
+/* line 57, estilos_index.scss */
+nav button i.fa-bars {
+  color: #E2E2E2;
+  font-size: 1.5rem; }
+
+/* line 62, estilos_index.scss */
+#navbarNav ul li a {
+  color: #E2E2E2; }
+
+@media (min-width: 768px) {
+  /* line 69, estilos_index.scss */
+  #navbarNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+
+  /* line 73, estilos_index.scss */
+  #navbarNav ul li:nth-child(1) {
+    border-bottom: solid 2px #33BBBB; }
+
+  /* line 76, estilos_index.scss */
+  #navbarNav ul li a {
+    color: #E2E2E2; }
+
+  /* line 79, estilos_index.scss */
+  #navbarNav ul li a.nav-link {
+    padding-bottom: 0;
+    margin-bottom: 0; } }
+
+/*# sourceMappingURL=estilos_index.css.map */

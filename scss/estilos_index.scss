@@ -1,0 +1,275 @@
+//------------------HELPERS------------- 
+.bordes {
+    border: solid 2px lime;
+}
+
+.bordes1 {
+    border: solid 2px red;
+}
+
+.bordes2 {
+    border: solid 2px blue;
+}
+
+.bordes2 {
+    border: solid 2px orangered;
+}
+
+.bordes3 {
+    border: solid 2px fuchsia;
+}
+
+.bordes4 {
+    border: solid 2px brown;
+}
+
+//------------------DEFINIENDO COLORES -------------
+$negroNav: #111111;
+$azul:#12AFAF;
+//------------------FUENTES -------------
+html {
+    font-size: 16px;
+}
+
+body, h1, h2, h3, h4, h5 , h6, p {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+
+ //------------------ESTILOS BANNER PRINCIPAL -------------
+.bannerPrincipal {
+    background: url(../image/imgHeader.jpg) fixed top;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bannerPrincipal h1 {
+    font-weight: 900;
+}
+
+.bannerPrincipal button {
+    background-color: $azul;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 575px) {
+    .bannerPrincipal h1 {
+        font-weight: bold;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .bannerPrincipal h1 {
+        font-size: 5rem;
+        font-weight: bold;
+    }
+    .bannerPrincipal h3 {
+        font-size: 2rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .bannerPrincipal h1 {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    .bannerPrincipal h3 {
+        font-size: 2rem;
+    }
+}
+
+//------------------ESTILOS AGENCIA -------------
+.contenidoAgencia {
+    background-color: $azul;
+}
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .contenidoAgencia h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .contenidoAgencia p {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+        
+    }
+    .contenidoAgencia img {
+        padding: 3rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+//------------------NUESTRO GOODWILL -------------
+.goodWill section span {
+    color: $azul;
+}
+
+.goodWill .listaImg .content-thebest-list1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.goodWill .listaImg .content-thebest-list1 img {
+    height: 70%;
+    width: 70%;
+}
+
+.goodWill .listaImg .content-thebest-list2 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.goodWill .listaImg .content-thebest-list2 img {
+    height: 70%;
+    width: 70%;
+} 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 575px) {  }
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 767px) { 
+    .goodWill .content-thebest-list1 h6, .goodWill .content-thebest-list2 h6{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .goodWill section h6 {
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .goodWill section p {
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 991px) {  }
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 1199px) {  }
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+//------------------NUESTROS SERVICIOS -------------
+.nuestrosServicios {
+    background: url(../image/1.jpg) fixed left repeat;
+   background-size: cover;
+}
+
+.nuestrosServicios img {
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+} 
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+.nuestrosServicios img {
+    height: 50%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+} 
+
+    .nuestrosServicios div h3.h6{
+        font-size: 1.5rem;
+        text-align: left;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+    .nuestrosServicios section h3 {
+        font-size: 2.5rem;
+    }
+    .nuestrosServicios div h3.h6{
+        margin-top: 1rem;
+    }
+
+    .nuestrosServicios div p{
+          font-size: 1.1rem;
+          text-align: center;
+          font-weight: lighter;
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
+
+//------------------NUESTRO TRABAJO - CLIENTES -------------
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    .clientes section h3 strong{
+        font-size: 2.5rem;
+    }
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+    
+
+ }
+
+//------------------FOOTER -------------
+footer {
+    background-color: $negroNav;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer div.info ul li {
+    font-variant: small-caps;
+}
+
+footer div.info span {
+    background-color: $azul;
+}
