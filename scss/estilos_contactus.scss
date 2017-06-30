@@ -1,65 +1,72 @@
-//-------------------------------
-//PATRON DE COLORES
-//-------------------------------
-//textos
-$textoParrafos :#E2E2E2;
-$textoTitulo:#E2E2E2;
-$textoTituloSecundario:#007070;
-//contenido
-$azulContenido:#009191;
-$verdeIconos:#66E666;
-$verdeBanner: #0B4646;
-$azulIconos:#5BCCCC;
-$azulBotones:#007070;
-$azulBotonesBordes:#33BBBB;
-$negroBanners:#0B4646;
-$negroHeader:#363636;
-$negroFooter:#202020;
-//-------------------------------
-//FUENTES
-//-------------------------------
+//------------------HELPERS------------- 
+.bordes {
+    border: solid 2px lime;
+}
+
+.bordes1 {
+    border: solid 2px red;
+}
+
+.bordes2 {
+    border: solid 2px blue;
+}
+
+.bordes2 {
+    border: solid 2px orangered;
+}
+
+.bordes3 {
+    border: solid 2px fuchsia;
+}
+
+.bordes4 {
+    border: solid 2px brown;
+}
+
+//------------------DEFINIENDO COLORES -------------
+$negroNav: #111111;
+$azul:#12AFAF;
+$bannerBreadCumb:#009191;
+//------------------FUENTES -------------
 html {
     font-size: 16px;
 }
 
-body,
-button {
-    font-family: 'Roboto', sans-serif;
+body, h1, h2, h3, h4, h5 , h6, p {
+    font-family: 'Roboto', sans-serif !important;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: $negroHeader;
+
+ //------------------ESTILOS BANNER PRINCIPAL -------------
+.bannerPrincipal {
+    background: url(../image/imgcontactdesktop.jpg) fixed left no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
-nav button.navbar-toggler.navbar-toggler-right {
-    border: solid 1px $textoParrafos;
+.bannerPrincipal h1 {
+    font-weight: 900;
 }
 
-nav button i.fa-bars {
-    color: $textoParrafos;
-    font-size: 1.5rem;
+.bannerPrincipal button {
+    background-color: $azul;
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 575px) {
+    .bannerPrincipal h1 {
+        font-weight: bold;
+    }
+}
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    #navbarNav {
-        display: flex;
-        flex-direction: row-reverse;
+    .bannerPrincipal h1 {
+        font-size: 5rem;
+        font-weight: bold;
     }
-    #navbarNav ul li:nth-child(3) {
-        border-bottom: solid 2px $azulBotonesBordes;
-    }
-    #navbarNav ul li a {
-        color: $textoTitulo;
-    }
-    #navbarNav ul li a.nav-link {
-        padding-bottom: 0;
-        margin-bottom: 0;
+    .bannerPrincipal h3 {
+        font-size: 2rem;
     }
 }
 
@@ -67,201 +74,73 @@ nav button i.fa-bars {
 @media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-//----------------------------------------------------------------------------//
-//start Main Banner 
-.mainBanner {
-    background: url("../image/imgcontactmovil.jpg") fixed no-repeat top;
-    height: 100vh;
-    background-size:cover;
-    height: 480px;
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+@media (min-width: 1200px) {
+    .bannerPrincipal h1 {
+        font-size: 6rem;
+        font-weight: 900;
+    }
+    .bannerPrincipal h3 {
+        font-size: 2rem;
+    }
 }
 
-.mainBanner h1,
-h3 {
-    color: $textoTitulo;
-    margin: 0;
-    padding: 0;
+//------------------ESTILOS BREADCRUMBS -------------
+
+.breadcrumbUs {
+    background-color: $azul;
 }
 
-.mainBanner h1 {
-    font-size: 4rem;
-    font-weight: 600;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
-    margin-top: 3rem;
+.breadcrumbUs .row div{
+    background-color: $bannerBreadCumb;
 }
 
-.mainBanner h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
-}
-
-.mainBanner div:nth-child(3) h3 {
-    margin-top: -4rem;
-}
-
-.mainBanner button {
-    background-color: $azulBotones;
-    border: solid 1px $azulBotonesBordes;
-    font-weight: 300;
-    line-height: 24px;
-    color: $textoParrafos;
-}
-
-// Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-
-.mainBanner h1 {
-    font-size: 5rem;
-    font-weight: 600;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
-    margin-top: 3rem;
-}
-
-.mainBanner h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
-}
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {}
-
-//----------------------------------------------------------------------------//
-//start BreadCrumb
-.bradcrumbUs .row {
-    display: flex;
-    justify-content: flex-end;
-    background-color: $verdeBanner;
-}
-
-.bradcrumbUs .breadcrumb {
+.breadcrumbUs ol{
     background-color: transparent;
-    border: none;
     margin: 0;
 }
 
-.bradcrumbUs ol li a {
-    color: $textoParrafos;
-    text-decoration: underline;
+.breadcrumbUs .breadcrumb-item::before{
+    color:white;
 }
 
-.bradcrumbUs .breadcrumb li.breadcrumb-item.active {
+//------------------FORMULARIO -------------
+
+.formulario .row button[type="submit"]{
+    background-color: $azul;
+}
+
+.redesSociales p{
     font-size: 1rem;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
 }
 
-.bradcrumbUs .breadcrumb li.breadcrumb-item.active::before {
-    color: $textoParrafos;
+.formulario .row .redesSociales a {
+    animation-name: botonesSociales;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
 }
 
-.content .row {
-    background-color: $azulContenido;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 3rem;
+.formulario .row .redesSociales a:hover {
+    animation-play-state: running;
 }
 
 
-//footer
+//------------------FOOTER -------------
 footer {
-    background-color: $negroFooter;
-    padding-top: 3rem;
-}
-
-footer h3 {
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: $textoTitulo;
-}
-
-footer .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: $negroNav;
 }
 
 footer ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    font-size: 0.8rem;
-    font-weight: 300;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    color: $textoTitulo;
 }
 
-footer .row ul span {
-    background-color: $textoTitulo;
-    color: $negroHeader;
-    padding: 0 1rem;
-    font-weight: 700;
+footer div.info ul li {
+    font-variant: small-caps;
 }
 
-footer .footer-Social li {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-}
-
-footer .footer-Social li i {
-    color: $textoTitulo;
-    font-size: 2rem;
-    margin: 1rem;
-    padding: 1rem;
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    footer .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    footer .row div {
-        padding: 1rem;
-        margin: 1rem;
-    }
-    footer .footer-Social li i {
-        color: $textoTitulo;
-        font-size: 2rem;
-        margin: 0.5rem;
-        padding: 0.5rem;
-    }
+footer div.info span {
+    background-color:indianred;
 }

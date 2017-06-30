@@ -1,227 +1,130 @@
+/* line 2, ../scss/estilos_contactus.scss */
+.bordes {
+  border: solid 2px lime; }
+
+/* line 6, ../scss/estilos_contactus.scss */
+.bordes1 {
+  border: solid 2px red; }
+
+/* line 10, ../scss/estilos_contactus.scss */
+.bordes2 {
+  border: solid 2px blue; }
+
+/* line 14, ../scss/estilos_contactus.scss */
+.bordes2 {
+  border: solid 2px orangered; }
+
+/* line 18, ../scss/estilos_contactus.scss */
+.bordes3 {
+  border: solid 2px fuchsia; }
+
+/* line 22, ../scss/estilos_contactus.scss */
+.bordes4 {
+  border: solid 2px brown; }
+
+/* line 31, ../scss/estilos_contactus.scss */
 html {
   font-size: 16px; }
 
-body,
-button {
-  font-family: 'Roboto', sans-serif; }
+/* line 35, ../scss/estilos_contactus.scss */
+body, h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Roboto', sans-serif !important; }
 
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #363636; }
-
-nav button.navbar-toggler.navbar-toggler-right {
-  border: solid 1px #E2E2E2; }
-
-nav button i.fa-bars {
-  color: #E2E2E2;
-  font-size: 1.5rem; }
-
-@media (min-width: 768px) {
-  #navbarNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse; }
-
-  #navbarNav ul li:nth-child(3) {
-    border-bottom: solid 2px #33BBBB; }
-
-  #navbarNav ul li a {
-    color: #E2E2E2; }
-
-  #navbarNav ul li a.nav-link {
-    padding-bottom: 0;
-    margin-bottom: 0; } }
-.mainBanner {
-  background: url("../image/imgcontactmovil.jpg") fixed no-repeat top;
-  height: 100vh;
+/* line 41, ../scss/estilos_contactus.scss */
+.bannerPrincipal {
+  background: url(../image/imgcontactdesktop.jpg) fixed left no-repeat;
   background-size: cover;
-  height: 480px;
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  height: 100vh; }
 
-.mainBanner h1,
-h3 {
-  color: #E2E2E2;
-  margin: 0;
-  padding: 0; }
+/* line 47, ../scss/estilos_contactus.scss */
+.bannerPrincipal h1 {
+  font-weight: 900; }
 
-.mainBanner h1 {
-  font-size: 4rem;
-  font-weight: 600;
-  line-height: 60px;
-  letter-spacing: -0.5px;
-  color: #E2E2E2;
-  margin-top: 3rem; }
+/* line 51, ../scss/estilos_contactus.scss */
+.bannerPrincipal button {
+  background-color: #12AFAF; }
 
-.mainBanner h3 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  color: #E2E2E2; }
-
-.mainBanner div:nth-child(3) h3 {
-  margin-top: -4rem; }
-
-.mainBanner button {
-  background-color: #007070;
-  border: solid 1px #33BBBB;
-  font-weight: 300;
-  line-height: 24px;
-  color: #E2E2E2; }
-
-@media (min-width: 992px) {
-  .mainBanner h1 {
+@media (min-width: 575px) {
+  /* line 57, ../scss/estilos_contactus.scss */
+  .bannerPrincipal h1 {
+    font-weight: bold; } }
+@media (min-width: 768px) {
+  /* line 64, ../scss/estilos_contactus.scss */
+  .bannerPrincipal h1 {
     font-size: 5rem;
-    font-weight: 600;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-    color: #E2E2E2;
-    margin-top: 3rem; }
+    font-weight: bold; }
 
-  .mainBanner h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: -0.5px;
-    color: #E2E2E2; } }
-.bradcrumbUs .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: #0B4646; }
+  /* line 68, ../scss/estilos_contactus.scss */
+  .bannerPrincipal h3 {
+    font-size: 2rem; } }
+@media (min-width: 1200px) {
+  /* line 78, ../scss/estilos_contactus.scss */
+  .bannerPrincipal h1 {
+    font-size: 6rem;
+    font-weight: 900; }
 
-.bradcrumbUs .breadcrumb {
+  /* line 82, ../scss/estilos_contactus.scss */
+  .bannerPrincipal h3 {
+    font-size: 2rem; } }
+/* line 89, ../scss/estilos_contactus.scss */
+.breadcrumbUs {
+  background-color: #12AFAF; }
+
+/* line 93, ../scss/estilos_contactus.scss */
+.breadcrumbUs .row div {
+  background-color: #009191; }
+
+/* line 97, ../scss/estilos_contactus.scss */
+.breadcrumbUs ol {
   background-color: transparent;
-  border: none;
   margin: 0; }
 
-.bradcrumbUs ol li a {
-  color: #E2E2E2;
-  text-decoration: underline; }
+/* line 102, ../scss/estilos_contactus.scss */
+.breadcrumbUs .breadcrumb-item::before {
+  color: white; }
 
-.bradcrumbUs .breadcrumb li.breadcrumb-item.active {
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  color: #E2E2E2; }
+/* line 108, ../scss/estilos_contactus.scss */
+.formulario .row button[type="submit"] {
+  background-color: #12AFAF; }
 
-.bradcrumbUs .breadcrumb li.breadcrumb-item.active::before {
-  color: #E2E2E2; }
+/* line 112, ../scss/estilos_contactus.scss */
+.redesSociales p {
+  font-size: 1rem; }
 
-.content .row {
-  background-color: #009191;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 3rem; }
+/* line 116, ../scss/estilos_contactus.scss */
+.formulario .row .redesSociales a {
+  -webkit-animation-name: botonesSociales;
+          animation-name: botonesSociales;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused; }
 
+/* line 124, ../scss/estilos_contactus.scss */
+.formulario .row .redesSociales a:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+
+/* line 130, ../scss/estilos_contactus.scss */
 footer {
-  background-color: #202020;
-  padding-top: 3rem; }
+  background-color: #111111; }
 
-footer h3 {
-  padding: 1rem;
-  font-size: 1.1rem;
-  font-weight: 300;
-  line-height: 24px;
-  letter-spacing: -0.5px;
-  color: #E2E2E2; }
-
-footer .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
+/* line 134, ../scss/estilos_contactus.scss */
 footer ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-  font-size: 0.8rem;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-  color: #E2E2E2; }
+  list-style: none; }
 
-footer .row ul span {
-  background-color: #E2E2E2;
-  color: #363636;
-  padding: 0 1rem;
-  font-weight: 700; }
+/* line 140, ../scss/estilos_contactus.scss */
+footer div.info ul li {
+  font-variant: small-caps; }
 
-footer .footer-Social li {
-  display: inline-block;
-  margin: 0;
-  padding: 0; }
-
-footer .footer-Social li i {
-  color: #E2E2E2;
-  font-size: 2rem;
-  margin: 1rem;
-  padding: 1rem; }
-
-@media (min-width: 768px) {
-  footer .row {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
-
-  footer .row div {
-    padding: 1rem;
-    margin: 1rem; }
-
-  footer .footer-Social li i {
-    color: #E2E2E2;
-    font-size: 2rem;
-    margin: 0.5rem;
-    padding: 0.5rem; } }
+/* line 144, ../scss/estilos_contactus.scss */
+footer div.info span {
+  background-color: indianred; }
 
 /*# sourceMappingURL=estilos_contactus.css.map */
