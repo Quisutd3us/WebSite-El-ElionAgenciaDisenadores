@@ -41,7 +41,7 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
   font-weight: 900; }
 
 /* line 50, ../scss/estilos_nosotros.scss */
-.bannerPrincipal button {
+.bannerPrincipal a {
   background-color: #12AFAF; }
 
 @media (min-width: 575px) {
@@ -87,50 +87,53 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
 .contenido {
   background-color: #12AFAF; }
 
-/* line 112, ../scss/estilos_nosotros.scss */
-.contenido .resaltado {
-  background-color: #111111;
-  opacity: 0.8;
-  margin: 1rem;
-  padding: 1rem; }
+/* line 115, ../scss/estilos_nosotros.scss */
+.contenido #accordion .card {
+  border-radius: none;
+  border: none; }
 
-/* line 118, ../scss/estilos_nosotros.scss */
-.contenido .resaltado span {
-  padding: 0.3rem;
+/* line 120, ../scss/estilos_nosotros.scss */
+#accordion .card div .bg-inverse {
+  opacity: 0.9 !important; }
+
+/* line 124, ../scss/estilos_nosotros.scss */
+#accordion .card .card-header {
   background-color: #009191;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: white; }
+  -webkit-box-shadow: inset 0px -84px 114px -42px rgba(76, 76, 76, 0.3);
+          box-shadow: inset 0px -84px 114px -42px rgba(76, 76, 76, 0.3); }
 
-/* line 127, ../scss/estilos_nosotros.scss */
-.contenido .row div h6 {
-  line-height: 130%; }
+/* line 129, ../scss/estilos_nosotros.scss */
+#accordion .card .card-header h5 a:hover {
+  text-decoration: none; }
 
-@media (min-width: 768px) {
-  /* line 139, ../scss/estilos_nosotros.scss */
-  .contenido .row div h6 {
-    width: 50%; } }
+/* line 132, ../scss/estilos_nosotros.scss */
+#accordion .card .card-header h5 a:visited {
+  text-decoration: none; }
+
+/* line 136, ../scss/estilos_nosotros.scss */
+#accordion .card .card-header h5 a {
+  text-decoration: none; }
+
 @media (min-width: 1200px) {
-  /* line 149, ../scss/estilos_nosotros.scss */
+  /* line 156, ../scss/estilos_nosotros.scss */
   .contenido h1 {
     font-size: 2.5rem;
     font-weight: 700; } }
-/* line 157, ../scss/estilos_nosotros.scss */
+/* line 164, ../scss/estilos_nosotros.scss */
 footer {
   background-color: #111111; }
 
-/* line 161, ../scss/estilos_nosotros.scss */
+/* line 168, ../scss/estilos_nosotros.scss */
 footer ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 167, ../scss/estilos_nosotros.scss */
+/* line 174, ../scss/estilos_nosotros.scss */
 footer div.info ul li {
   font-variant: small-caps; }
 
-/* line 171, ../scss/estilos_nosotros.scss */
+/* line 178, ../scss/estilos_nosotros.scss */
 footer div.info span {
   background-color: #12AFAF; }
 

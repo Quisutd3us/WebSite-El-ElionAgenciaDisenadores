@@ -47,7 +47,7 @@ body, h1, h2, h3, h4, h5 , h6, p , a, span{
     font-weight: 900;
 }
 
-.bannerPrincipal button {
+.bannerPrincipal a {
     background-color: $azul;
 }
 
@@ -109,23 +109,32 @@ body, h1, h2, h3, h4, h5 , h6, p , a, span{
 .contenido{
     background-color: $azul;
 }
-.contenido .resaltado{
-    background-color: $negroNav;
-    opacity: 0.8;
-    margin: 1rem;padding: 1rem;
+
+
+
+.contenido #accordion .card{
+    border-radius: none;
+    border:none;
 }
 
-.contenido .resaltado span{
-    padding: 0.3rem;
+#accordion .card div .bg-inverse {
+    opacity: 0.9 !important;
+}
+
+#accordion .card .card-header{
     background-color:$bannerBreadCumb;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: white;
+    box-shadow: inset 0px -84px 114px -42px rgba(76,76,76,0.3);
 }
 
-.contenido .row div h6{
-    line-height: 130%;
+#accordion .card .card-header h5 a:hover{
+    text-decoration: none;
+}
+#accordion .card .card-header h5 a:visited{
+    text-decoration: none;
+}
+
+#accordion .card .card-header h5 a{
+    text-decoration: none;
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -136,9 +145,7 @@ body, h1, h2, h3, h4, h5 , h6, p , a, span{
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-    .contenido .row div h6{
-    width: 50%;
-}
+    
  }
 
 // Large devices (desktops, 992px and up)
