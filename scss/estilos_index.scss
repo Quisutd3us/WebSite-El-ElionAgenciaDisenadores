@@ -31,12 +31,16 @@ html {
     font-size: 16px;
 }
 
-body, h1, h2, h3, h4, h5 , h6, p {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     font-family: 'Roboto', sans-serif !important;
-}
-
-
- //------------------ESTILOS BANNER PRINCIPAL -------------
+} //------------------ESTILOS BANNER PRINCIPAL -------------
 .bannerPrincipal {
     background: url(../image/imgHeader.jpg) fixed top;
     background-size: cover;
@@ -49,6 +53,26 @@ body, h1, h2, h3, h4, h5 , h6, p {
 
 .bannerPrincipal button {
     background-color: $azul;
+}
+
+// animacion Flecha Arriba - Abajo
+.bannerPrincipal .fa-chevron-down {
+    animation-name: movimentoFlecha;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes movimentoFlecha {
+    0% {
+        transform: translateY(0px);
+        color: white;
+    }
+    100% {
+        transform: translateY(50px);
+        color: $azul;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -103,7 +127,6 @@ body, h1, h2, h3, h4, h5 , h6, p {
         margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 100;
-        
     }
     .contenidoAgencia img {
         padding: 3rem;
@@ -141,19 +164,36 @@ body, h1, h2, h3, h4, h5 , h6, p {
 .goodWill .listaImg .content-thebest-list2 img {
     height: 70%;
     width: 70%;
-} 
+}
+
+.goodWill .listaImg .content-thebest-list2 img:hover, .goodWill .listaImg .content-thebest-list1 img:hover {
+    animation-name: rotacionIconos;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes rotacionIconos{
+     0% {
+        transform: rotateY(0deg) scale(0.5);
+    }
+    100% {
+        transform: rotateY(180deg) scale(1);
+    }
+}
 
 // Extra small devices (portrait phones, less than 576px)
-@media (min-width: 575px) {  }
+@media (min-width: 575px) {}
 
 // Small devices (landscape phones, less than 768px)
-@media (min-width: 767px) { 
-    .goodWill .content-thebest-list1 h6, .goodWill .content-thebest-list2 h6{
+@media (min-width: 767px) {
+    .goodWill .content-thebest-list1 h6,
+    .goodWill .content-thebest-list2 h6 {
         margin-top: 1rem;
         font-size: 1.5rem;
         font-weight: 500;
     }
-
     .goodWill section h6 {
         font-size: 2.5rem;
         font-weight: 500;
@@ -162,98 +202,91 @@ body, h1, h2, h3, h4, h5 , h6, p {
         font-size: 1.5rem;
         font-weight: 300;
     }
- }
+}
 
 // Medium devices (tablets, less than 992px)
-@media (min-width: 991px) {  }
+@media (min-width: 991px) {}
 
 // Large devices (desktops, less than 1200px)
-@media (min-width: 1199px) {  }
+@media (min-width: 1199px) {}
 
 // Extra large devices (large desktops)
 // No media query since the extra-large breakpoint has no upper bound on its width
-
 //------------------NUESTROS SERVICIOS -------------
 .nuestrosServicios {
     background: url(../image/1.jpg) fixed left repeat;
-   background-size: cover;
+    background-size: cover;
 }
 
 .nuestrosServicios img {
     height: 50%;
     width: 50%;
     margin: 0;
-    padding: 0;
-} 
+    padding: 1rem;
+}
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { 
-.nuestrosServicios img {
-    height: 50%;
-    width: 50%;
-    margin: 0;
-    padding: 0;
-} 
-
-    .nuestrosServicios div h3.h6{
+@media (min-width: 576px) {
+    .nuestrosServicios img {
+        max-height: 50%;
+        max-width: 50%;
+        margin: 0;
+        padding: 2rem;
+    }
+    .nuestrosServicios div h3.h6 {
         font-size: 1.5rem;
         text-align: left;
     }
- }
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-
+@media (min-width: 768px) {
     .nuestrosServicios section h3 {
         font-size: 2.5rem;
     }
-    .nuestrosServicios div h3.h6{
+    .nuestrosServicios div h3.h6 {
         margin-top: 1rem;
     }
-
-    .nuestrosServicios div p{
-          font-size: 1.1rem;
-          text-align: center;
-          font-weight: lighter;
+    .nuestrosServicios div p {
+        font-size: 1.1rem;
+        text-align: center;
+        font-weight: lighter;
     }
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+    .nuestrosServicios div img {
+    max-height: 70%;
+    max-width: 70%;
+    margin: 0;
+    padding: 0;
+} 
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) {}
 
 //------------------NUESTRO TRABAJO - CLIENTES -------------
-
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
-
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {  }
+@media (min-width: 576px) {}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { 
-    .clientes section h3 strong{
+@media (min-width: 768px) {
+    .clientes section h3 strong {
         font-size: 2.5rem;
     }
-
- }
+}
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    
- }
+@media (min-width: 992px) {}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-    
-
- }
+@media (min-width: 1200px) {}
 
 //------------------FOOTER -------------
 footer {
