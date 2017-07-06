@@ -41,99 +41,165 @@ body, h1, h2, h3, h4, h5, h6, p, a, span {
   font-weight: 900; }
 
 /* line 50, ../scss/estilos_nosotros.scss */
-.bannerPrincipal a {
+.bannerPrincipal a.btn {
   background-color: #12AFAF; }
 
+/* line 56, ../scss/estilos_nosotros.scss */
+.bannerPrincipal .fa-chevron-down {
+  -webkit-animation-name: movimentoFlecha;
+          animation-name: movimentoFlecha;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate; }
+
+@-webkit-keyframes movimentoFlecha {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white; }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    color: #12AFAF; } }
+
+@keyframes movimentoFlecha {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white; }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    color: #12AFAF; } }
 @media (min-width: 575px) {
-  /* line 56, ../scss/estilos_nosotros.scss */
+  /* line 77, ../scss/estilos_nosotros.scss */
   .bannerPrincipal h1 {
     font-weight: bold; } }
 @media (min-width: 768px) {
-  /* line 63, ../scss/estilos_nosotros.scss */
+  /* line 84, ../scss/estilos_nosotros.scss */
   .bannerPrincipal h1 {
     font-size: 5rem;
     font-weight: bold; }
 
-  /* line 67, ../scss/estilos_nosotros.scss */
+  /* line 88, ../scss/estilos_nosotros.scss */
   .bannerPrincipal h3 {
     font-size: 2rem; } }
 @media (min-width: 1200px) {
-  /* line 77, ../scss/estilos_nosotros.scss */
+  /* line 98, ../scss/estilos_nosotros.scss */
   .bannerPrincipal h1 {
     font-size: 6rem;
     font-weight: 900; }
 
-  /* line 81, ../scss/estilos_nosotros.scss */
+  /* line 102, ../scss/estilos_nosotros.scss */
   .bannerPrincipal h3 {
     font-size: 2rem; } }
-/* line 88, ../scss/estilos_nosotros.scss */
+/* line 109, ../scss/estilos_nosotros.scss */
 .breadcrumbUs {
   background-color: #12AFAF; }
 
-/* line 92, ../scss/estilos_nosotros.scss */
+/* line 113, ../scss/estilos_nosotros.scss */
 .breadcrumbUs .row div {
   background-color: #009191; }
 
-/* line 96, ../scss/estilos_nosotros.scss */
+/* line 117, ../scss/estilos_nosotros.scss */
 .breadcrumbUs ol {
   background-color: transparent;
   margin: 0; }
 
-/* line 101, ../scss/estilos_nosotros.scss */
+/* line 122, ../scss/estilos_nosotros.scss */
 .breadcrumbUs .breadcrumb-item::before {
   color: white; }
 
-/* line 109, ../scss/estilos_nosotros.scss */
+/* line 130, ../scss/estilos_nosotros.scss */
 .contenido {
   background-color: #12AFAF; }
 
-/* line 115, ../scss/estilos_nosotros.scss */
+/* line 136, ../scss/estilos_nosotros.scss */
 .contenido #accordion .card {
   border-radius: none;
   border: none; }
 
-/* line 120, ../scss/estilos_nosotros.scss */
+/* line 141, ../scss/estilos_nosotros.scss */
 #accordion .card div .bg-inverse {
   opacity: 0.9 !important; }
 
-/* line 124, ../scss/estilos_nosotros.scss */
+/* line 145, ../scss/estilos_nosotros.scss */
 #accordion .card .card-header {
   background-color: #009191;
   -webkit-box-shadow: inset 0px -84px 114px -42px rgba(76, 76, 76, 0.3);
           box-shadow: inset 0px -84px 114px -42px rgba(76, 76, 76, 0.3); }
 
-/* line 129, ../scss/estilos_nosotros.scss */
+/* line 150, ../scss/estilos_nosotros.scss */
 #accordion .card .card-header h5 a:hover {
   text-decoration: none; }
 
-/* line 132, ../scss/estilos_nosotros.scss */
+/* line 153, ../scss/estilos_nosotros.scss */
 #accordion .card .card-header h5 a:visited {
   text-decoration: none; }
 
-/* line 136, ../scss/estilos_nosotros.scss */
+/* line 157, ../scss/estilos_nosotros.scss */
 #accordion .card .card-header h5 a {
   text-decoration: none; }
 
+/* line 161, ../scss/estilos_nosotros.scss */
+#agencia .row:nth-child(2) div:nth-child(2) img {
+  -webkit-animation-name: movimentoCubo;
+          animation-name: movimentoCubo;
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: normal;
+          animation-direction: normal; }
+
+@-webkit-keyframes movimentoCubo {
+  0% {
+    -webkit-transform: rotate(0) scale(0.5);
+            transform: rotate(0) scale(0.5); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.8);
+            transform: rotate(180deg) scale(0.8); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5); } }
+
+@keyframes movimentoCubo {
+  0% {
+    -webkit-transform: rotate(0) scale(0.5);
+            transform: rotate(0) scale(0.5); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.8);
+            transform: rotate(180deg) scale(0.8); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(0.5);
+            transform: rotate(360deg) scale(0.5); } }
 @media (min-width: 1200px) {
-  /* line 156, ../scss/estilos_nosotros.scss */
+  /* line 195, ../scss/estilos_nosotros.scss */
   .contenido h1 {
     font-size: 2.5rem;
     font-weight: 700; } }
-/* line 164, ../scss/estilos_nosotros.scss */
+/* line 203, ../scss/estilos_nosotros.scss */
 footer {
   background-color: #111111; }
 
-/* line 168, ../scss/estilos_nosotros.scss */
+/* line 207, ../scss/estilos_nosotros.scss */
 footer ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 174, ../scss/estilos_nosotros.scss */
+/* line 213, ../scss/estilos_nosotros.scss */
 footer div.info ul li {
   font-variant: small-caps; }
 
-/* line 178, ../scss/estilos_nosotros.scss */
+/* line 217, ../scss/estilos_nosotros.scss */
 footer div.info span {
   background-color: indianred; }
 

@@ -44,59 +44,91 @@ body, h1, h2, h3, h4, h5, h6, p {
 .bannerPrincipal button {
   background-color: #12AFAF; }
 
+/* line 56, ../scss/estilos_contactus.scss */
+.bannerPrincipal .fa-chevron-down {
+  -webkit-animation-name: movimentoFlecha;
+          animation-name: movimentoFlecha;
+  -webkit-animation-duration: 1500ms;
+          animation-duration: 1500ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate; }
+
+@-webkit-keyframes movimentoFlecha {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white; }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    color: #12AFAF; } }
+
+@keyframes movimentoFlecha {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    color: white; }
+  100% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    color: #12AFAF; } }
 @media (min-width: 575px) {
-  /* line 57, ../scss/estilos_contactus.scss */
+  /* line 77, ../scss/estilos_contactus.scss */
   .bannerPrincipal h1 {
     font-weight: bold; } }
 @media (min-width: 768px) {
-  /* line 64, ../scss/estilos_contactus.scss */
+  /* line 84, ../scss/estilos_contactus.scss */
   .bannerPrincipal h1 {
     font-size: 5rem;
     font-weight: bold; }
 
-  /* line 68, ../scss/estilos_contactus.scss */
+  /* line 88, ../scss/estilos_contactus.scss */
   .bannerPrincipal h3 {
     font-size: 2rem; } }
 @media (min-width: 1200px) {
-  /* line 78, ../scss/estilos_contactus.scss */
+  /* line 98, ../scss/estilos_contactus.scss */
   .bannerPrincipal h1 {
     font-size: 6rem;
     font-weight: 900; }
 
-  /* line 82, ../scss/estilos_contactus.scss */
+  /* line 102, ../scss/estilos_contactus.scss */
   .bannerPrincipal h3 {
     font-size: 2rem; } }
-/* line 89, ../scss/estilos_contactus.scss */
+/* line 109, ../scss/estilos_contactus.scss */
 .breadcrumbUs {
   background-color: #12AFAF; }
 
-/* line 93, ../scss/estilos_contactus.scss */
+/* line 113, ../scss/estilos_contactus.scss */
 .breadcrumbUs .row div {
   background-color: #009191; }
 
-/* line 97, ../scss/estilos_contactus.scss */
+/* line 117, ../scss/estilos_contactus.scss */
 .breadcrumbUs ol {
   background-color: transparent;
   margin: 0; }
 
-/* line 102, ../scss/estilos_contactus.scss */
+/* line 122, ../scss/estilos_contactus.scss */
 .breadcrumbUs .breadcrumb-item::before {
   color: white; }
 
-/* line 108, ../scss/estilos_contactus.scss */
+/* line 128, ../scss/estilos_contactus.scss */
 .formulario .row button[type="submit"] {
   background-color: #12AFAF; }
 
-/* line 112, ../scss/estilos_contactus.scss */
+/* line 132, ../scss/estilos_contactus.scss */
 .redesSociales p {
   font-size: 1rem; }
 
-/* line 116, ../scss/estilos_contactus.scss */
+/* line 136, ../scss/estilos_contactus.scss */
 .formulario .row .redesSociales a {
-  -webkit-animation-name: botonesSociales;
-          animation-name: botonesSociales;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-name: btnSociales;
+          animation-name: btnSociales;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
@@ -104,26 +136,47 @@ body, h1, h2, h3, h4, h5, h6, p {
   -webkit-animation-play-state: paused;
           animation-play-state: paused; }
 
-/* line 124, ../scss/estilos_contactus.scss */
+/* line 144, ../scss/estilos_contactus.scss */
 .formulario .row .redesSociales a:hover {
   -webkit-animation-play-state: running;
           animation-play-state: running; }
 
-/* line 130, ../scss/estilos_contactus.scss */
+@-webkit-keyframes btnSociales {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+
+@keyframes btnSociales {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5); }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); } }
+/* line 165, ../scss/estilos_contactus.scss */
 footer {
   background-color: #111111; }
 
-/* line 134, ../scss/estilos_contactus.scss */
+/* line 169, ../scss/estilos_contactus.scss */
 footer ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-/* line 140, ../scss/estilos_contactus.scss */
+/* line 175, ../scss/estilos_contactus.scss */
 footer div.info ul li {
   font-variant: small-caps; }
 
-/* line 144, ../scss/estilos_contactus.scss */
+/* line 179, ../scss/estilos_contactus.scss */
 footer div.info span {
   background-color: indianred; }
 

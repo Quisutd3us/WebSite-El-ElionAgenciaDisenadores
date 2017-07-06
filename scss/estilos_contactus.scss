@@ -52,6 +52,26 @@ body, h1, h2, h3, h4, h5 , h6, p {
     background-color: $azul;
 }
 
+// animacion Flecha Arriba - Abajo
+.bannerPrincipal .fa-chevron-down {
+    animation-name: movimentoFlecha;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes movimentoFlecha {
+    0% {
+        transform: translateY(0px);
+        color: white;
+    }
+    100% {
+        transform: translateY(50px);
+        color: $azul;
+    }
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (min-width: 575px) {
     .bannerPrincipal h1 {
@@ -114,16 +134,31 @@ body, h1, h2, h3, h4, h5 , h6, p {
 }
 
 .formulario .row .redesSociales a {
-    animation-name: botonesSociales;
-    animation-duration: 1000ms;
+    animation-name: btnSociales;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: paused;
 }
 
 .formulario .row .redesSociales a:hover {
-    animation-play-state: running;
+animation-play-state: running;
+    
 }
+
+@keyframes btnSociales {
+    0% {
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+
 
 
 //------------------FOOTER -------------

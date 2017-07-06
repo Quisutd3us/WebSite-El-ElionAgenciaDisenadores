@@ -47,8 +47,29 @@ body, h1, h2, h3, h4, h5 , h6, p , a, span{
     font-weight: 900;
 }
 
-.bannerPrincipal a {
+.bannerPrincipal a.btn {
     background-color: $azul;
+}
+
+
+// animacion Flecha Arriba - Abajo
+.bannerPrincipal .fa-chevron-down {
+    animation-name: movimentoFlecha;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes movimentoFlecha {
+    0% {
+        transform: translateY(0px);
+        color: white;
+    }
+    100% {
+        transform: translateY(50px);
+        color: $azul;
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -135,6 +156,24 @@ body, h1, h2, h3, h4, h5 , h6, p , a, span{
 
 #accordion .card .card-header h5 a{
     text-decoration: none;
+}
+
+#agencia .row:nth-child(2) div:nth-child(2) img {
+    animation-name: movimentoCubo;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: normal;
+}
+
+@keyframes movimentoCubo {
+    0% {
+        transform: rotate(0) scale(0.5);
+    }
+    50% { transform: rotate(180deg) scale(0.8); }
+    100% {
+        transform: rotate(360deg) scale(0.5);
+    }
 }
 
 // Extra small devices (portrait phones, less than 576px)
