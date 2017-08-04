@@ -1,23 +1,30 @@
 .bordes {
-  border: solid 2px lime; }
+  border: solid 2px lime;
+}
 
 .bordes1 {
-  border: solid 2px red; }
+  border: solid 2px red;
+}
 
 .bordes2 {
-  border: solid 2px blue; }
+  border: solid 2px blue;
+}
 
 .bordes2 {
-  border: solid 2px orangered; }
+  border: solid 2px orangered;
+}
 
 .bordes3 {
-  border: solid 2px fuchsia; }
+  border: solid 2px fuchsia;
+}
 
 .bordes4 {
-  border: solid 2px brown; }
+  border: solid 2px brown;
+}
 
 html {
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 body,
 h1,
@@ -27,211 +34,266 @@ h4,
 h5,
 h6,
 p {
-  font-family: 'Roboto', sans-serif !important; }
+  font-family: 'Roboto', sans-serif !important;
+}
 
 .bannerPrincipal {
   background: url(../image/imgMiHeader.jpg) no-repeat fixed top;
-  background-size: cover; }
+  background-size: cover;
+  height: 100vh;
+}
 
 .bannerPrincipal h1 {
-  font-weight: 900; }
+  font-weight: 900;
+}
 
 .bannerPrincipal button {
-  background-color: #12AFAF; }
+  background-color: #12AFAF;
+}
 
 .bannerPrincipal .fa-chevron-down {
   -webkit-animation-name: movimentoFlecha;
-          animation-name: movimentoFlecha;
+  animation-name: movimentoFlecha;
   -webkit-animation-duration: 1500ms;
-          animation-duration: 1500ms;
+  animation-duration: 1500ms;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
   -webkit-animation-direction: alternate;
-          animation-direction: alternate; }
+  animation-direction: alternate;
+}
 
 @-webkit-keyframes movimentoFlecha {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    color: white; }
+    transform: translateY(0px);
+    color: white;
+  }
   100% {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    color: #12AFAF; } }
+    transform: translateY(50px);
+    color: #12AFAF;
+  }
+}
 
 @keyframes movimentoFlecha {
   0% {
     -webkit-transform: translateY(0px);
-            transform: translateY(0px);
-    color: white; }
+    transform: translateY(0px);
+    color: white;
+  }
   100% {
     -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-    color: #12AFAF; } }
+    transform: translateY(50px);
+    color: #12AFAF;
+  }
+}
+
 @media (min-width: 575px) {
   .bannerPrincipal h1 {
-    font-weight: bold; } }
+    font-weight: bold;
+  }
+}
+
 @media (min-width: 768px) {
   .bannerPrincipal h1 {
     font-size: 5rem;
-    font-weight: bold; }
-
+    font-weight: bold;
+  }
   .bannerPrincipal h3 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+  }
+}
+
 @media (min-width: 1200px) {
   .bannerPrincipal h1 {
     font-size: 6rem;
-    font-weight: 900; }
-
+    font-weight: 900;
+  }
   .bannerPrincipal h3 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+  }
+}
+
 .contenidoAgencia {
-  background-color: #12AFAF; }
+  background-color: #12AFAF;
+}
 
 @media (min-width: 768px) {
   .contenidoAgencia h3 {
     font-size: 2.5rem;
-    font-weight: 500; }
-
+    font-weight: 500;
+  }
   .contenidoAgencia p {
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-weight: 100; }
-
+    font-weight: 100;
+  }
   .contenidoAgencia img {
-    padding: 3rem; } }
+    padding: 3rem;
+  }
+}
+
 .goodWill section span {
-  color: #12AFAF; }
+  color: #12AFAF;
+}
 
 .goodWill .listaImg .content-thebest-list1 {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 .goodWill .listaImg .content-thebest-list1 img {
   height: 70%;
-  width: 70%; }
+  width: 70%;
+}
 
 .goodWill .listaImg .content-thebest-list2 {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 .goodWill .listaImg .content-thebest-list2 img {
   height: 70%;
-  width: 70%; }
+  width: 70%;
+}
 
-.goodWill .listaImg .content-thebest-list2 img:hover, .goodWill .listaImg .content-thebest-list1 img:hover {
+.goodWill .listaImg .content-thebest-list2 img:hover,
+.goodWill .listaImg .content-thebest-list1 img:hover {
   -webkit-animation-name: rotacionIconos;
-          animation-name: rotacionIconos;
+  animation-name: rotacionIconos;
   -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-direction: alternate-reverse;
-          animation-direction: alternate-reverse; }
+  animation-direction: alternate-reverse;
+}
 
 @-webkit-keyframes rotacionIconos {
   0% {
     -webkit-transform: rotateY(0deg) scale(0.5);
-            transform: rotateY(0deg) scale(0.5); }
+    transform: rotateY(0deg) scale(0.5);
+  }
   100% {
     -webkit-transform: rotateY(180deg) scale(1);
-            transform: rotateY(180deg) scale(1); } }
+    transform: rotateY(180deg) scale(1);
+  }
+}
 
 @keyframes rotacionIconos {
   0% {
     -webkit-transform: rotateY(0deg) scale(0.5);
-            transform: rotateY(0deg) scale(0.5); }
+    transform: rotateY(0deg) scale(0.5);
+  }
   100% {
     -webkit-transform: rotateY(180deg) scale(1);
-            transform: rotateY(180deg) scale(1); } }
+    transform: rotateY(180deg) scale(1);
+  }
+}
+
 @media (min-width: 767px) {
   .goodWill .content-thebest-list1 h6,
   .goodWill .content-thebest-list2 h6 {
     margin-top: 1rem;
     font-size: 1.5rem;
-    font-weight: 500; }
-
+    font-weight: 500;
+  }
   .goodWill section h6 {
     font-size: 2.5rem;
-    font-weight: 500; }
-
+    font-weight: 500;
+  }
   .goodWill section p {
     font-size: 1.5rem;
-    font-weight: 300; } }
+    font-weight: 300;
+  }
+}
+
 .nuestrosServicios {
   background: url(../image/1.jpg) fixed left repeat;
   background-size: cover;
- }
+}
 
 .nuestrosServicios img {
   height: 50%;
   width: 50%;
   margin: 0;
-  padding: 1rem; }
+  padding: 1rem;
+}
 
 @media (min-width: 576px) {
   .nuestrosServicios img {
     max-height: 50%;
     max-width: 50%;
     margin: 0;
-    padding: 2rem; }
-
+    padding: 2rem;
+  }
   .nuestrosServicios div h3.h6 {
     font-size: 1.5rem;
-    text-align: left; } }
+    text-align: left;
+  }
+}
+
 @media (min-width: 768px) {
   .nuestrosServicios section h3 {
-    font-size: 2.5rem; }
-
+    font-size: 2.5rem;
+  }
   .nuestrosServicios div h3.h6 {
-    margin-top: 1rem; }
-
+    margin-top: 1rem;
+  }
   .nuestrosServicios div p {
     font-size: 1.1rem;
     text-align: center;
-    font-weight: lighter; } 
+    font-weight: lighter;
+  }
   .clientes section h3 strong {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
   }
+}
+
 @media (min-width: 992px) {
-  .nuestrosServicios{
+  .nuestrosServicios {
     height: 100vh;
-
   }
-
-  .nuestrosServicios .container div.row{
+  .nuestrosServicios .container div.row {
     margin-top: 1.5rem;
   }
   .nuestrosServicios div img {
     max-height: 70%;
     max-width: 70%;
     margin: 0;
-    padding: 0; } }
-@media (min-width: 1200px){
+    padding: 0;
+  }
+}
 
-  .nuestrosServicios .container div.row{
+@media (min-width: 1200px) {
+  .nuestrosServicios .container div.row {
     margin-top: 3rem;
   }
 }
 
 footer {
-  background-color: #111111; }
+  background-color: #111111;
+}
 
 footer ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 footer div.info ul li {
-  font-variant: small-caps; }
+  font-variant: small-caps;
+}
 
 footer div.info span {
-  background-color: indianred; }
+  background-color: indianred;
+}
+
 
 /*# sourceMappingURL=estilos_index.css.map */
