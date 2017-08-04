@@ -30,7 +30,7 @@ p {
   font-family: 'Roboto', sans-serif !important; }
 
 .bannerPrincipal {
-  background: url(../image/imgHeader.jpg) fixed top;
+  background: url(../image/imgHeader.jpg) no-repeat fixed top;
   background-size: cover;
   height: 100vh; }
 
@@ -167,7 +167,8 @@ p {
     font-weight: 300; } }
 .nuestrosServicios {
   background: url(../image/1.jpg) fixed left repeat;
-  background-size: cover; }
+  background-size: cover;
+ }
 
 .nuestrosServicios img {
   height: 50%;
@@ -195,16 +196,31 @@ p {
   .nuestrosServicios div p {
     font-size: 1.1rem;
     text-align: center;
-    font-weight: lighter; } }
+    font-weight: lighter; } 
+  .clientes section h3 strong {
+    font-size: 2.5rem; }
+  }
 @media (min-width: 992px) {
+  .nuestrosServicios{
+    height: 100vh;
+
+  }
+
+  .nuestrosServicios .container div.row{
+    margin-top: 1.5rem;
+  }
   .nuestrosServicios div img {
     max-height: 70%;
     max-width: 70%;
     margin: 0;
     padding: 0; } }
-@media (min-width: 768px) {
-  .clientes section h3 strong {
-    font-size: 2.5rem; } }
+@media (min-width: 1200px){
+
+  .nuestrosServicios .container div.row{
+    margin-top: 3rem;
+  }
+}
+
 footer {
   background-color: #111111; }
 
